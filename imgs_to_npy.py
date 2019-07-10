@@ -7,15 +7,15 @@ import argparse
 def args_parse():
     # construct the argument parse and parse the arguments
     ap = argparse.ArgumentParser()
-    ap.add_argument("-dtrain", "--data_path", default="/home/workplace/yz/works/EDSR-Keras-master/imgs/train/lr", required=False,
+    ap.add_argument("-dtrain", "--data_path", default="imgs/train/lr", required=False,
                     help="path to input image")
-    ap.add_argument("-dlabel", "--label_path", default="/home/workplace/yz/works/EDSR-Keras-master/imgs/train/hr", required=False,
+    ap.add_argument("-dlabel", "--label_path", default="imgs/train/hr", required=False,
                     help="path to input label")
     ap.add_argument("-dtest", "--test_path", default="imgs/test_data", required=False,
                     help="path to test image")
     ap.add_argument("-dtlabel", "--tlabel_path", default="imgs/test_label", required=False,
                     help="path to test label")
-    ap.add_argument("-npath", "--npy_path", default="/home/workplace/yz/works/EDSR-Keras-master/data/", required=False,
+    ap.add_argument("-npath", "--npy_path", default="data/", required=False,
                     help="path to .npy files")
     ap.add_argument("-itype", "--img_type", default="png", required=False,
                     help="path to output model")
