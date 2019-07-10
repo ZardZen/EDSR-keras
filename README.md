@@ -8,5 +8,9 @@ You can modify and run data_process.py to create your own datasets. Then run img
 python train_EDSR.py
 
 ## Test  
-python test.py
+python test.py  
+
+## Reference  
+[RCF-keras](https://github.com/fupiao1998/RCF-keras)
+[super-resolution](https://github.com/krasserm/super-resolution)
 
