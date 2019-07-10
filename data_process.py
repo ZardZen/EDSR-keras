@@ -8,9 +8,9 @@ from skimage import data,filters,color
 import matplotlib.pyplot as plt
 
 
-from_path="/home/data1/11server/2K/Train/HR/"
-data_path="/home/workplace/yz/works/EDSR-Keras-master/imgs/train/lr"
-label_path="/home/workplace/yz/works/EDSR-Keras-master/imgs/train/hr"
+from_path="Train/HR/"
+data_path="imgs/train/lr"
+label_path="imgs/train/hr"
 
 files=os.listdir(from_path)
 index=1
