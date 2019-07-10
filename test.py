@@ -12,7 +12,7 @@ from keras import backend as K
 from keras.losses import mean_absolute_error, mean_squared_error
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-path="/home/workplace/yz/works/EDSR-Keras-master/results"
+path="results"
 
 def mae(hr, sr):
     hr, sr = _crop_hr_in_training(hr, sr)
