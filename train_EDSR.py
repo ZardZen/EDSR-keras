@@ -81,7 +81,7 @@ def train(args):
     callback_list = [lr_decay, checkpointer, tensorboard]
 
     #optimizer = SGD(lr=1e-5, momentum=args["momentum"], nesterov=False)
-    optimizer = Adam(lr=1e-3, beta_1=0.9, beta_2=0.999)
+    optimizer = Adam(lr=1e-4, beta_1=0.9, beta_2=0.999)
     #parallel_model = multi_gpu_model(model, gpus=1)
     #parallel_model.compile(loss=mae,metrics=psnr,optimizer=optimizer)
     model.compile(loss=mae,metrics=[psnr],optimizer=optimizer)
